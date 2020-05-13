@@ -15,6 +15,6 @@ class Solution:
         for digit in num:
             while k>0 and stack and stack[-1] > digit:
                 stack.pop()
-                k--
+                k-=1
             stack.append(digit)
         return ''.join(stack[:-k or None]).lstrip("0") or "0"

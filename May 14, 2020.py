@@ -48,4 +48,4 @@ class Trie:
             if char not in current.children:
                 return False
             current = current.children[char]
-        return True
+        return (True)
